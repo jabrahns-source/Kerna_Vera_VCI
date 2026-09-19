@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "KERNA Ledger VCI",
+      "hasCanvas": false,
+      "bodyTextLen": 1498,
+      "bodyTextHash": "6dff0cb6447e4a5b113ef83dc17c3bbf85b1c20b0746835220242ff7bb0af0ca",
+      "bodyTextPrefix": "KERNA Ledger VCI Q-REG 1.0.0 Command Engine Ledger Adversary The",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "KERNA Ledger VCI",
+      "hasCanvas": false,
+      "bodyTextLen": 1274,
+      "bodyTextHash": "5e0112b666ec97b2d9a77d75e046f7de8668cb56bb21b6db91b328ede8a6f421",
+      "bodyTextPrefix": "AUDIT GRADE · ED25519 · SHA-256 COMMAND · CARB MRR 2024 Verified",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}

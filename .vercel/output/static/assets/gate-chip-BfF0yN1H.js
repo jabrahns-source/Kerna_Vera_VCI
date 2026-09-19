@@ -1,0 +1,1 @@
+import{m as e}from"./index-C7mLIEqF.js";import{t}from"./badge-OFMzEDoS.js";import{i as n}from"./format-ZqiwM77u.js";var r=e(),i={GREEN:`green`,YELLOW:`yellow`,BLACK:`black`,PIPELINE_ERROR:`error`};function a({gate:e}){return(0,r.jsx)(t,{variant:i[e],children:n(e)})}export{a as t};
