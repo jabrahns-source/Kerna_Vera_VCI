@@ -1,5 +1,14 @@
 node_modules/
+dist/
+.vercel/
+.vercel/output/
+.target/
+__pycache__/
+*.pyc
 .project_id
 .github_repo
 .env
 .env.*
+.DS_Store
+coverage/
+*.log

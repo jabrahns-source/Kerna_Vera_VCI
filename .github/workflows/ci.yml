@@ -1,0 +1,21 @@
+name: ci
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  source-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Require product source
+        run: |
+          test -d src/lib/qreg
+          test -f src/lib/qreg/engine.ts
+          test -f LICENSE
+          test -f README.md
+      - name: Warn if vercel output present
+        run: |
+          if [ -d .vercel/output ]; then
+            echo "::warning::.vercel/output is still in the tree; see ARTIFACTS.md"
+          fi
