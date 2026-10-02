@@ -12,3 +12,7 @@ __pycache__/
 .DS_Store
 coverage/
 *.log
+.vercel/
+node_modules/
+.node_modules.lock
+dist/
