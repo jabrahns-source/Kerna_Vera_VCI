@@ -1,16 +1,14 @@
-# Committed artifacts (debt)
+# Committed non-source blobs
 
-This repository currently contains `.vercel/output/**` from an initial Grok/Vercel scaffold push.
+Checked 2026-10-06 against the default-branch tree.
 
-That tree is generated output. It inflates repo size (~1.8 MB listed, much of it bundled vendor JS) and will drift from `src/`.
+## Cleared
 
-## Cleanup procedure (next operator pass)
+`.vercel/output/**` is not in the tree. A recursive filter on `.vercel` returned zero blobs. `.gitignore` should keep that path out. Do not re-add Vercel build output.
 
-```bash
-git rm -r --cached .vercel
-# then commit
-# optional history rewrite:
-# git filter-repo --path .vercel --invert-paths
-```
+## Still present
 
-`.gitignore` now excludes `.vercel/` so new dumps do not re-enter the index.
+- `artifacts/imagine_images/f5454902-eeba-4470-9beb-6c79b4aab3d4.jpg` (209350 bytes). Design image, not a compiler artifact. Keep only if it is a referenced source asset; otherwise delete in a follow-up commit.
+- `package-lock.json` is a lockfile. Keep it.
+
+No `node_modules/`, `dist/`, or `__pycache__/` directories are committed.
